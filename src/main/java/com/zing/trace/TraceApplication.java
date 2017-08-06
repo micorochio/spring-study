@@ -2,11 +2,9 @@ package com.zing.trace;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringCloudApplication
-@EnableFeignClients
+@SpringBootApplication
 @MapperScan(value = "com.zing.trace.dao")
 public class TraceApplication {
     public static void main(String[] args) {
